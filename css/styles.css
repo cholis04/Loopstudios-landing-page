@@ -183,6 +183,99 @@ section.about .about-box > .about-content > p {
 }
 /* ################################################################### ABOUT SECTION ############ */
 
+/* ################################################################### OUR CREAIONS SECTION ############ */
+section.our-creations {
+  margin: 0 auto;
+  width: 100%;
+  min-height: 100vh;
+}
+section.our-creations .creations-box {
+  margin-bottom: 7rem;
+}
+section.our-creations .creations-box .heading-creations {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2.6rem;
+}
+section.our-creations .creations-box .heading-creations h2 {
+  flex-grow: 1;
+  text-transform: uppercase;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  font-size: 2em;
+  text-align: center;
+}
+section.our-creations .creations-box .heading-creations a {
+  display: none;
+}
+section.our-creations .creations-box .gallery-box {
+  display: grid;
+  row-gap: 1.4rem;
+  grid-template-columns: 1fr;
+}
+section.our-creations .creations-box .gallery-box > .gallery-item {
+  position: relative;
+}
+section.our-creations
+  .creations-box
+  .gallery-box
+  > .gallery-item
+  > picture
+  > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+section.our-creations
+  .creations-box
+  .gallery-box
+  > .gallery-item
+  > .overlay-text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.49933476808692223) 0%,
+    rgba(0, 0, 0, 0) 80%
+  );
+  top: 0;
+  left: 0;
+}
+section.our-creations
+  .creations-box
+  .gallery-box
+  > .gallery-item
+  > .overlay-text
+  > h3 {
+  position: absolute;
+  width: 48%;
+  left: 6%;
+  bottom: 20%;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 1.6em;
+  color: white;
+}
+section.our-creations .creations-box > .link-wrapper {
+  margin: 2rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.our-creations .creations-box > .link-wrapper > a {
+  padding: 0.8em 2.4em;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  color: black;
+  border: 2px solid black;
+  text-decoration: none;
+}
+/* ################################################################### OUR CREAIONS SECTION ############ */
+
 /* ##################### DESKTOP ######################### */
 /* ##################### DESKTOP ######################### */
 /* ##################### DESKTOP ######################### */
@@ -279,4 +372,78 @@ section.about .about-box > .about-content > p {
   }
 
   /* ################################################################### ABOUT SECTION ############ */
+
+  /* ################################################################### OUR CREAIONS SECTION ############ */
+  section.our-creations .creations-box .heading-creations h2 {
+    font-size: 3em;
+    text-align: left;
+  }
+  section.our-creations .creations-box .heading-creations a {
+    display: block;
+    padding: 0.6em 2.4em;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    color: black;
+    border: 2px solid black;
+    text-decoration: none;
+    transition: all 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+  section.our-creations .creations-box .heading-creations a:hover {
+    background-color: black;
+    color: white;
+  }
+
+  section.our-creations .creations-box .gallery-box {
+    gap: 1.4rem;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  section.our-creations
+    .creations-box
+    .gallery-box
+    > .gallery-item
+    > .overlay-text {
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.49933476808692223) 0%,
+      rgba(0, 0, 0, 0) 80%
+    );
+    transition: all 0.2s ease-in-out;
+  }
+
+  section.our-creations
+    .creations-box
+    .gallery-box
+    > .gallery-item
+    > .overlay-text
+    > h3 {
+    font-size: 2em;
+    width: 70%;
+    left: 15%;
+    bottom: 6%;
+    right: 2%;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+
+  section.our-creations
+    .creations-box
+    .gallery-box
+    > .gallery-item
+    > .overlay-text:hover {
+    background: hsla(0, 0%, 100%, 0.7);
+  }
+  section.our-creations
+    .creations-box
+    .gallery-box
+    > .gallery-item
+    > .overlay-text:hover
+    > h3 {
+    color: black;
+  }
+
+  section.our-creations .creations-box > .link-wrapper {
+    display: none;
+  }
+  /* ################################################################### OUR CREAIONS SECTION ############ */
 }
