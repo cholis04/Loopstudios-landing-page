@@ -6,3 +6,206 @@
   .attribution a {
     color: hsl(228, 45%, 44%);
   } */
+
+/* ####################### ↓ MY SOLUTION CSS ↓ ########################## */
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300;400;500&display=swap');
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+  font-family: 'Alata', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 15px;
+}
+
+img {
+  width: 100%;
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding: 0 2em;
+  width: 100%;
+  max-width: 1196px;
+}
+
+/* ################################################################### HEADER ############ */
+
+header {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url('../images/mobile/image-hero.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+header nav > div.navbar {
+  padding: 3em 2em 2em 2em;
+
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1196px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  flex-wrap: wrap;
+}
+
+/* ### TOGGLE MENU ###*/
+input[type='checkbox'].toggle-check,
+header nav > div.navbar > .toggle-menu > label > .icon-menu {
+  display: none;
+}
+
+@media only screen and (max-width: 860px) {
+  input[type='checkbox'].toggle-check:not(:checked)
+    ~ header
+    nav
+    > div.navbar
+    > .toggle-menu
+    > label
+    > .toggle-menu-open {
+    display: block;
+  }
+  input[type='checkbox'].toggle-check:checked
+    ~ header
+    nav
+    > div.navbar
+    > .toggle-menu
+    > label
+    > .toggle-menu-close {
+    display: block;
+  }
+  input[type='checkbox'].toggle-check:checked ~ header {
+    position: fixed;
+    background-image: none;
+    background-color: hsl(0, 0%, 0%);
+  }
+  input[type='checkbox'].toggle-check:checked ~ header > div {
+    display: none;
+  }
+
+  header > nav > .navbar > ul.menu {
+    display: none;
+    width: 100%;
+    min-height: 80vh;
+    list-style-type: none;
+  }
+  header > nav > .navbar > ul.menu > li {
+    width: 100%;
+    margin: 1rem auto;
+  }
+  header > nav > .navbar > ul.menu > li > a {
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  input[type='checkbox'].toggle-check:checked
+    ~ header
+    > nav
+    > .navbar
+    > ul.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  /* ### TOGGLE MENU ###*/
+}
+
+header .heading-text {
+  position: absolute;
+  margin: 0 auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+header .heading-text h1 {
+  border: 3px solid white;
+  text-transform: uppercase;
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  font-size: 2.6em;
+  padding: 0.7em;
+}
+/* ################################################################### HEADER ############ */
+
+/* ##################### DESKTOP ######################### */
+/* ##################### DESKTOP ######################### */
+/* ##################### DESKTOP ######################### */
+
+@media only screen and (min-width: 860px) {
+  /* ################################################################### HEADER ############ */
+  header {
+    min-height: 90vh;
+    background: url('../images/desktop/image-hero.jpg') rgba(0, 0, 0, 0.4);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+  }
+  header nav > div.navbar {
+    padding: 4em 2em;
+  }
+  header nav > div.navbar > .toggle-menu {
+    display: none;
+  }
+  header > nav > .navbar > ul.menu {
+    list-style-type: none;
+    display: flex;
+    width: unset;
+    min-height: unset;
+  }
+  header > nav > .navbar > ul.menu > li {
+    margin-left: 2.2rem;
+  }
+  header > nav > .navbar > ul.menu > li > a {
+    position: relative;
+    padding: 0.5em 0;
+    color: white;
+    font-size: 1em;
+    font-weight: 400;
+    text-decoration: none;
+  }
+  header > nav > .navbar > ul.menu > li > a::after {
+    background: none;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 100%;
+    border-bottom: 2px solid white;
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+  header > nav > .navbar > ul.menu > li > a:hover:after {
+    width: 50%;
+  }
+
+  header > .heading-text {
+    margin-top: 2.4rem;
+    width: 100%;
+    max-width: 1196px;
+  }
+  header > .heading-text h1 {
+    padding: 0.5em 0.6em;
+    font-size: 4.7em;
+    width: 60%;
+  }
+  /* ################################################################### HEADER ############ */
+}

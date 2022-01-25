@@ -16,29 +16,50 @@
 </head>
 
 <body>
-  <nav>
-    <div class="wrapper">
+
+  <!-- Header Componenet -->
+  <input type="checkbox" id="toggle-menu" name="toggle-menu" class="toggle-check" />
+  <header>
+    <nav>
       <div class="navbar">
-        <p>Loopstudios</p>
-        <ul>
+        <div class="brand-logo">
+          <img src="./images/logo.svg" alt="" title="Loopstudio" />
+        </div>
+        <div class="toggle-menu">
+          <label for="toggle-menu">
+            <img src=" ./images/icon-hamburger.svg" alt="" title="Open Menu Navigation"
+              class="icon-menu toggle-menu-open" />
+            <img src="./images/icon-close.svg" alt="" title="Close Menu Navigation"
+              class="icon-menu toggle-menu-close" />
+          </label>
+        </div>
+        <ul class="menu">
           <li>
             <a href="#">About</a>
+          </li>
+          <li>
             <a href="#">Careers</a>
+          </li>
+          <li>
             <a href="#">Events</a>
+          </li>
+          <li>
             <a href="#">Products</a>
+          </li>
+          <li>
             <a href="#">Support</a>
           </li>
         </ul>
       </div>
-    </div>
-  </nav>
-
-  <header>
-    <div class="wrapper">
-      <h1>Immersive experiences that deliver</h1>
+    </nav>
+    <div class="heading-text">
+      <div class="wrapper">
+        <h1>Immersive experiences that deliver</h1>
+      </div>
     </div>
   </header>
 
+  <!-- Section About Componenet -->
   <section class="about">
     <div class="wrapper">
       <div class="about-box">
@@ -59,6 +80,7 @@
   </section>
 
 
+  <!-- Section Our Creation Componenet -->
   <section class="our-creations">
     <div class="wrapper">
       <div class="creations-box">
@@ -131,6 +153,7 @@
     </div>
   </section>
 
+  <!-- Footer Componenet -->
   <footer>
     <div class="wrapper">
       <div class="link-footer">
@@ -176,6 +199,18 @@
       rel="noopener noreferrer">Frontend Mentor</a>.
     Coded by <a href="https://cholis04.github.io" target="_blank" rel="noopener noreferrer">cholis04</a>.
   </div> -->
+
+  <!-- <script type="text/javascript">
+    var toggleMenu = document.getElementById('toggle-menu');
+    toggleMenu.addEventListener('click', function () {
+      if (toggleMenu.checked == true) {
+        document.body.style.overflow = 'hidden';
+      } else {
+        document.body.style.overflow = 'auto';
+      }
+    })
+  </script> -->
+
 </body>
 
 </html>
