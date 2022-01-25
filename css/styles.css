@@ -92,6 +92,7 @@ header nav > div.navbar > .toggle-menu > label > .icon-menu {
   }
   input[type='checkbox'].toggle-check:checked ~ header {
     position: fixed;
+    z-index: 99;
     background-image: none;
     background-color: hsl(0, 0%, 0%);
   }
@@ -276,6 +277,57 @@ section.our-creations .creations-box > .link-wrapper > a {
 }
 /* ################################################################### OUR CREAIONS SECTION ############ */
 
+/* ################################################################### FOOTER SECTION ############ */
+footer {
+  background-color: black;
+  color: white;
+  padding: 4rem 0;
+}
+footer .box-footer,
+footer .box-footer > .link-footer,
+footer .box-footer > .contact-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+footer .box-footer > .link-footer > .brand-logo-footer {
+  text-align: center;
+}
+footer .box-footer > .link-footer > .brand-logo-footer > img {
+  max-width: 9rem;
+}
+footer .box-footer > .link-footer > ul {
+  margin: 2.6rem auto;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+}
+footer .box-footer > .link-footer > ul > li {
+  margin: 0.7rem auto;
+}
+footer .box-footer > .link-footer > ul > li > a {
+  color: white;
+  text-decoration: none;
+}
+
+footer .box-footer > .contact-footer > ul.social-link {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .box-footer > .contact-footer > ul.social-link > li {
+  margin: 0 0.6rem;
+}
+footer .box-footer > .contact-footer > p {
+  margin-top: 1.5rem;
+  text-align: center;
+  color: hsl(0, 0%, 55%);
+}
+/* ################################################################### FOOTER SECTION ############ */
+
+/* ##################### DESKTOP ######################### */
+/* ##################### DESKTOP ######################### */
 /* ##################### DESKTOP ######################### */
 /* ##################### DESKTOP ######################### */
 /* ##################### DESKTOP ######################### */
@@ -374,6 +426,9 @@ section.our-creations .creations-box > .link-wrapper > a {
   /* ################################################################### ABOUT SECTION ############ */
 
   /* ################################################################### OUR CREAIONS SECTION ############ */
+  section.our-creations {
+    padding-bottom: 4em;
+  }
   section.our-creations .creations-box .heading-creations h2 {
     font-size: 3em;
     text-align: left;
@@ -394,6 +449,7 @@ section.our-creations .creations-box > .link-wrapper > a {
   }
 
   section.our-creations .creations-box .gallery-box {
+    margin-top: 6rem;
     gap: 1.4rem;
     grid-template-columns: repeat(4, 1fr);
   }
@@ -418,10 +474,10 @@ section.our-creations .creations-box > .link-wrapper > a {
     > .overlay-text
     > h3 {
     font-size: 2em;
-    width: 70%;
-    left: 15%;
+    padding: 0 1.4em;
+    width: 100%;
+    left: 0%;
     bottom: 6%;
-    right: 2%;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
   }
@@ -446,4 +502,63 @@ section.our-creations .creations-box > .link-wrapper > a {
     display: none;
   }
   /* ################################################################### OUR CREAIONS SECTION ############ */
+
+  /* ################################################################### FOOTER SECTION ############ */
+  footer {
+    padding: 3rem 0;
+  }
+  footer .box-footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  footer .box-footer > .link-footer > .brand-logo-footer {
+    text-align: left;
+  }
+  footer .box-footer > .link-footer > ul {
+    flex-direction: row;
+    margin: 0;
+    margin-top: 1rem;
+  }
+  footer .box-footer > .link-footer > ul > li {
+    margin-right: 2rem;
+  }
+
+  footer .box-footer > .contact-footer > ul.social-link {
+    justify-content: flex-end;
+  }
+  footer .box-footer > .contact-footer > ul.social-link > li {
+    margin: 0;
+    margin-left: 1rem;
+  }
+
+  /* LINK HOVER */
+  footer .box-footer > .link-footer > ul > li > a,
+  footer .box-footer > .contact-footer > ul.social-link > li > a {
+    position: relative;
+    cursor: pointer;
+    padding: 0.4em 0;
+  }
+  footer .box-footer > .link-footer > ul > li > a::after,
+  footer .box-footer > .contact-footer > ul.social-link > li > a::after {
+    content: '';
+    background: none;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 100%;
+    border-bottom: 2px solid white;
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+  footer .box-footer > .link-footer > ul > li > a:hover:after,
+  footer .box-footer > .contact-footer > ul.social-link > li > a:hover:after {
+    width: 50%;
+  }
+  /* LINK HOVER */
+  footer .box-footer > .contact-footer > p {
+    text-align: right;
+  }
+  /* ################################################################### FOOTER SECTION ############ */
 }
