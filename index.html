@@ -59,7 +59,7 @@
   </header>
 
   <!-- Section About Componenet -->
-  <section class="about">
+  <section class="about" role="article">
     <div class="wrapper">
       <div class="about-box">
         <picture class="about-image-grid">
@@ -80,14 +80,14 @@
 
 
   <!-- Section Our Creation Componenet -->
-  <section class="our-creations">
+  <main>
     <div class="wrapper">
       <div class="creations-box">
         <div class="heading-creations">
           <h2>Our creations</h2>
           <a href="#">See all</a>
         </div>
-        <div class="gallery-box">
+        <div class="gallery-box" role="group">
           <div class="gallery-item">
             <picture class="about-image-grid">
               <source media="(min-width:860px)" srcset="./images/desktop/image-deep-earth.jpg" />
@@ -166,10 +166,10 @@
         </div>
       </div>
     </div>
-  </section>
+  </main>
 
   <!-- Footer Componenet -->
-  <footer>
+  <div class="footer">
     <div class="wrapper">
       <div class="box-footer">
         <div class="link-footer">
@@ -187,22 +187,22 @@
         <div class="contact-footer">
           <ul class="social-link">
             <li>
-              <a href="#">
+              <a href="#" aria-label="Visit Our Facebook">
                 <img src="./images/icon-facebook.svg" alt="" title="Icon Facebook" />
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="#" aria-label="Visit Our Twitter">
                 <img src="./images/icon-twitter.svg" alt="" title="Icon Twitter" />
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="#" aria-label="Visit Our Pinterest">
                 <img src="./images/icon-pinterest.svg" alt="" title="Icon Pinterest" />
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="#" aria-label="Follow Our Instagram">
                 <img src="./images/icon-instagram.svg" alt="" title="Icon Instagram" />
               </a>
             </li>
@@ -211,7 +211,7 @@
         </div>
       </div>
     </div>
-  </footer>
+  </div>
 
   <!-- ATTRIBUTION -->
   <div class="attribution" role="contentinfo">
