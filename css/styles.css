@@ -333,10 +333,10 @@ main .creations-box > .link-wrapper > a {
 @media only screen and (min-width: 860px) {
   /* ################################################################### HEADER ############ */
   header {
-    min-height: 80vh;
+    min-height: 70vh;
     background: url('../images/desktop/image-hero.jpg') rgba(0, 0, 0, 0.4);
-    background-repeat: no-repeat;
     background-size: cover;
+    background-repeat: no-repeat;
     background-blend-mode: multiply;
   }
   header nav > div.navbar {
@@ -379,7 +379,7 @@ main .creations-box > .link-wrapper > a {
   }
 
   header > .heading-text {
-    margin-top: 2.4rem;
+    margin-top: 2rem;
     width: 100%;
     max-width: 1196px;
   }
