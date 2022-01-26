@@ -143,23 +143,23 @@ header .heading-text h1 {
 /* ################################################################### HEADER ############ */
 
 /* ################################################################### ABOUT SECTION ############ */
-section.about-section {
+article.about {
   margin: 0 auto;
   padding: 3rem 0;
   width: 100%;
   min-height: 100vh;
 }
-section.about-section .about-box {
+article.about .about-box {
   width: 100%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-section.about-section .about-box > .about-content {
+article.about .about-box > .about-content {
   margin-top: 2rem;
 }
-section.about-section .about-box > .about-content > h2 {
+article.about .about-box > .about-content > h2 {
   text-transform: uppercase;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 300;
@@ -167,7 +167,7 @@ section.about-section .about-box > .about-content > h2 {
   text-align: center;
   margin-bottom: 2rem;
 }
-section.about-section .about-box > .about-content > p {
+article.about .about-box > .about-content > p {
   padding: 0 1em;
   text-align: center;
   line-height: 1.6em;
@@ -391,29 +391,29 @@ main .creations-box > .link-wrapper > a {
   /* ################################################################### HEADER ############ */
 
   /* ################################################################### ABOUT SECTION ############ */
-  section.about-section .about-box {
+  article.about .about-box {
     margin-top: 6rem;
     min-height: 50vh;
     display: grid;
     grid-template-columns: 6.5fr 2fr 4fr;
     grid-template-rows: 2fr 3fr 1fr;
   }
-  section.about-section .about-box > .about-image-grid {
+  article.about .about-box > .about-image-grid {
     grid-column: 1/3;
     grid-row: 1/3;
   }
-  section.about-section .about-box > .about-content {
+  article.about .about-box > .about-content {
     margin: 0;
     padding: 6em 0 0 6em;
     grid-column: 2/4;
     grid-row: 2/4;
     background-color: white;
   }
-  section.about-section .about-box > .about-content > h2 {
+  article.about .about-box > .about-content > h2 {
     font-size: 3.2em;
     text-align: left;
   }
-  section.about-section .about-box > .about-content > p {
+  article.about .about-box > .about-content > p {
     padding: 0;
     text-align: left;
   }
