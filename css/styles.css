@@ -142,24 +142,33 @@ header .heading-text h1 {
 }
 /* ################################################################### HEADER ############ */
 
+/* ################################################################### MAIN ############ */
+/* ################################################################### MAIN ############ */
+
+main {
+  margin: 0 auto;
+  width: 100%;
+  min-height: 100vh;
+}
+
 /* ################################################################### ABOUT SECTION ############ */
-article.about {
+main article.about {
   margin: 0 auto;
   padding: 3rem 0;
   width: 100%;
   min-height: 100vh;
 }
-article.about .about-box {
+main article.about .about-box {
   width: 100%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-article.about .about-box > .about-content {
+main article.about .about-box > .about-content {
   margin-top: 2rem;
 }
-article.about .about-box > .about-content > h2 {
+main article.about .about-box > .about-content > h2 {
   text-transform: uppercase;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 300;
@@ -167,7 +176,7 @@ article.about .about-box > .about-content > h2 {
   text-align: center;
   margin-bottom: 2rem;
 }
-article.about .about-box > .about-content > p {
+main article.about .about-box > .about-content > p {
   padding: 0 1em;
   text-align: center;
   line-height: 1.6em;
@@ -176,11 +185,7 @@ article.about .about-box > .about-content > p {
 /* ################################################################### ABOUT SECTION ############ */
 
 /* ################################################################### OUR CREAIONS SECTION ############ */
-main {
-  margin: 0 auto;
-  width: 100%;
-  min-height: 100vh;
-}
+
 main .creations-box {
   margin-bottom: 7rem;
 }
@@ -254,49 +259,55 @@ main .creations-box > .link-wrapper > a {
 }
 /* ################################################################### OUR CREAIONS SECTION ############ */
 
+/* ################################################################### MAIN ############ */
+/* ################################################################### MAIN ############ */
+
 /* ################################################################### FOOTER SECTION ############ */
-.footer {
+footer {
   background-color: black;
   color: white;
+}
+footer .box-footer {
   padding: 4rem 0;
 }
-.footer .box-footer,
-.footer .box-footer > .link-footer,
-.footer .box-footer > .contact-footer {
+
+footer .box-footer,
+footer .box-footer > .link-footer,
+footer .box-footer > .contact-footer {
   display: flex;
   flex-direction: column;
 }
 
-.footer .box-footer > .link-footer > .brand-logo-footer {
+footer .box-footer > .link-footer > .brand-logo-footer {
   text-align: center;
 }
-.footer .box-footer > .link-footer > .brand-logo-footer > img {
+footer .box-footer > .link-footer > .brand-logo-footer > img {
   max-width: 9rem;
 }
-.footer .box-footer > .link-footer > ul {
+footer .box-footer > .link-footer > ul {
   margin: 2.6rem auto;
   display: flex;
   flex-direction: column;
   list-style-type: none;
 }
-.footer .box-footer > .link-footer > ul > li {
+footer .box-footer > .link-footer > ul > li {
   margin: 0.7rem auto;
 }
-.footer .box-footer > .link-footer > ul > li > a {
+footer .box-footer > .link-footer > ul > li > a {
   color: white;
   text-decoration: none;
 }
 
-.footer .box-footer > .contact-footer > ul.social-link {
+footer .box-footer > .contact-footer > ul.social-link {
   list-style-type: none;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.footer .box-footer > .contact-footer > ul.social-link > li {
+footer .box-footer > .contact-footer > ul.social-link > li {
   margin: 0 0.6rem;
 }
-.footer .box-footer > .contact-footer > p {
+footer .box-footer > .contact-footer > p {
   margin-top: 1.5rem;
   text-align: center;
   color: hsl(0, 0%, 55%);
@@ -333,7 +344,7 @@ main .creations-box > .link-wrapper > a {
 @media only screen and (min-width: 860px) {
   /* ################################################################### HEADER ############ */
   header {
-    min-height: 74vh;
+    min-height: 80vh;
     background: url('../images/desktop/image-hero.jpg') rgba(0, 0, 0, 0.4);
     background-size: cover;
     background-repeat: no-repeat;
@@ -390,30 +401,33 @@ main .creations-box > .link-wrapper > a {
   }
   /* ################################################################### HEADER ############ */
 
+  /* ################################################################### MAIN ############ */
+  /* ################################################################### MAIN ############ */
+
   /* ################################################################### ABOUT SECTION ############ */
-  article.about .about-box {
-    margin-top: 6rem;
+  main article.about .about-box {
+    margin-top: 4rem;
     min-height: 50vh;
     display: grid;
     grid-template-columns: 6.5fr 2fr 4fr;
     grid-template-rows: 2fr 3fr 1fr;
   }
-  article.about .about-box > .about-image-grid {
+  main article.about .about-box > .about-image-grid {
     grid-column: 1/3;
     grid-row: 1/3;
   }
-  article.about .about-box > .about-content {
+  main article.about .about-box > .about-content {
     margin: 0;
     padding: 6em 0 0 6em;
     grid-column: 2/4;
     grid-row: 2/4;
     background-color: white;
   }
-  article.about .about-box > .about-content > h2 {
+  main article.about .about-box > .about-content > h2 {
     font-size: 3.2em;
     text-align: left;
   }
-  article.about .about-box > .about-content > p {
+  main article.about .about-box > .about-content > p {
     padding: 0;
     text-align: left;
   }
@@ -480,44 +494,45 @@ main .creations-box > .link-wrapper > a {
   }
   /* ################################################################### OUR CREAIONS SECTION ############ */
 
+  /* ################################################################### MAIN ############ */
+  /* ################################################################### MAIN ############ */
+
   /* ################################################################### FOOTER SECTION ############ */
-  .footer {
+  footer .box-footer {
     padding: 3rem 0;
-  }
-  .footer .box-footer {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
-  .footer .box-footer > .link-footer > .brand-logo-footer {
+  footer .box-footer > .link-footer > .brand-logo-footer {
     text-align: left;
   }
-  .footer .box-footer > .link-footer > ul {
+  footer .box-footer > .link-footer > ul {
     flex-direction: row;
     margin: 0;
     margin-top: 1rem;
   }
-  .footer .box-footer > .link-footer > ul > li {
+  footer .box-footer > .link-footer > ul > li {
     margin-right: 2rem;
   }
 
-  .footer .box-footer > .contact-footer > ul.social-link {
+  footer .box-footer > .contact-footer > ul.social-link {
     justify-content: flex-end;
   }
-  .footer .box-footer > .contact-footer > ul.social-link > li {
+  footer .box-footer > .contact-footer > ul.social-link > li {
     margin: 0;
     margin-left: 1rem;
   }
 
   /* LINK HOVER */
-  .footer .box-footer > .link-footer > ul > li > a,
-  .footer .box-footer > .contact-footer > ul.social-link > li > a {
+  footer .box-footer > .link-footer > ul > li > a,
+  footer .box-footer > .contact-footer > ul.social-link > li > a {
     position: relative;
     cursor: pointer;
     padding: 0.4em 0;
   }
-  .footer .box-footer > .link-footer > ul > li > a::after,
-  .footer .box-footer > .contact-footer > ul.social-link > li > a::after {
+  footer .box-footer > .link-footer > ul > li > a::after,
+  footer .box-footer > .contact-footer > ul.social-link > li > a::after {
     content: '';
     background: none;
     position: absolute;
@@ -529,12 +544,12 @@ main .creations-box > .link-wrapper > a {
     border-bottom: 2px solid white;
     transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
   }
-  .footer .box-footer > .link-footer > ul > li > a:hover:after,
-  .footer .box-footer > .contact-footer > ul.social-link > li > a:hover:after {
+  footer .box-footer > .link-footer > ul > li > a:hover:after,
+  footer .box-footer > .contact-footer > ul.social-link > li > a:hover:after {
     width: 50%;
   }
   /* LINK HOVER */
-  .footer .box-footer > .contact-footer > p {
+  footer .box-footer > .contact-footer > p {
     text-align: right;
   }
   /* ################################################################### FOOTER SECTION ############ */
